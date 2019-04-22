@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Name Game</title>
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Movie Guru" />
+    <meta name="msapplication-TitleImage" content="images/logo-144.png" />
+    <meta name="msapplication-TitleColor" content="#ffffff" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/logo-152.png">
+    <link rel="manifest" href="/manifest.json">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.css">
 </head>
@@ -20,14 +29,15 @@
                 <h3>What your name say about your Personality?</h3>
                 <div class="input-group">
                     <label for="name">Your Name</label>
-                    <input type="text" name="name" id="name" pattern=""  required>
+                    <input type="text" name="name" id="name" pattern="" placeholder="Random Name" required>
                 </div>
                 <img id="avatar" src="https://joeschmoe.io/api/v1/random" alt="Welcome" >
                 <div class="additional-info">
                 </div>
-                <input type="button" class="animated pulse" value="Submit Yours" id="btn">
+                <input type="button" class="animated pulse" value="Check Yours" id="btn">
             </div>
         </div>
+        <p class="credits">Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a></p>
     </main>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js" defer="defer"></script>

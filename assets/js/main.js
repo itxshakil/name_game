@@ -8,6 +8,7 @@ btn.addEventListener('click', (e) => {
     }
     else{
         avatar.setAttribute('src' , `https://joeschmoe.io/api/v1/${name.value}`);
+        avatar.setAttribute('alt' , name.value);
     }
 })
 particlesJS.load('particles-js', './assets/particles.json', function() {
