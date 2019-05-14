@@ -15,7 +15,12 @@ $dark : darken(grey, 10%);
 p.credits {
     color: azure;
     text-align: center;
+    writing-mode: vertical-rl;
+    transform:rotate(180deg);
+    text-align: right;
+    text-orientation: sideways;
 }
+
 
 a {
     text-decoration: none;
@@ -41,12 +46,13 @@ canvas {
     display: inline-block;
     width: fit-content;
     margin: 0 auto;
-    padding: 0.4rem 1.3rem;
+    padding: 0.4rem 0.5rem;
     background: darken($primary-color, 10%);
     color: #fff;
     border-radius: 3px;
     border: none;
     outline: none;
+    margin-top: 0rem 0.5rem;
 }
 
 .whatsapp {
@@ -102,12 +108,12 @@ body {
 
         .container {
             display: flex;
+            margin:1rem;
             justify-content: center;
             align-items: center;
             height: 100vh;
 
             .form-container {
-                margin: 0 10%;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;

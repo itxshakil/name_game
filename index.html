@@ -12,13 +12,25 @@
     <meta name="apple-mobile-web-app-title" content="Name Game" />
     <meta name="msapplication-TitleColor" content="teal" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" /><!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140141921-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-140141921-1');
+    </script>
+    
 </head>
 
 <body id="particles-js">
     <main>
         <a href="#" class="btn how-to">How To Use</a>
         <div class="container">
+            <p class="credits">
+                Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a>
+            </p>
             <div class="form-container animated bounce">
                 <h3>What your name say about your Personality?</h3>
                 <div class="input-group">
@@ -38,10 +50,7 @@
                 <input type="button" class="animated pulse" value="Check Yours" id="btn" />
             </div>
         </div>
-        <a href="https://api.whatsapp.com/send?text=Hey Dear Check this awesome site .What your name say about your Personality. https://name-game.netlify.com" class="btn whatsapp animated rollIn">Share on Whatsapp</a>
-        <p class="credits">
-            Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a>
-        </p>
+        <a href="https://api.whatsapp.com/send?text=Hey Dear Check this awesome site .What your name say about your Personality. https://name-game.netlify.com" class="btn whatsapp animated rollIn .slower">Share on Whatsapp</a>
     </main>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js" defer="defer"></script>
