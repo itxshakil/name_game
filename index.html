@@ -2,42 +2,46 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Name Game</title>
-    <meta name="theme-color" content="white" />
+    <meta name="theme-color" content="teal" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Movie Guru" />
-    <meta name="msapplication-TitleImage" content="images/logo-144.png" />
-    <meta name="msapplication-TitleColor" content="#ffffff" />
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/logo-152.png">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <meta name="apple-mobile-web-app-status-bar-style" content="teal" />
+    <meta name="apple-mobile-web-app-title" content="Name Game" />
+    <meta name="msapplication-TitleColor" content="teal" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
 </head>
 
 <body id="particles-js">
-    <header>
-
-    </header>
-    <main >
+    <main>
+        <a href="#" class="btn how-to">How To Use</a>
         <div class="container">
             <div class="form-container animated bounce">
                 <h3>What your name say about your Personality?</h3>
                 <div class="input-group">
                     <label for="name">Your Name</label>
-                    <input type="text" name="name" id="name" pattern="" placeholder="Random Name" required>
+                    <input type="text" name="name" id="name" title="Please Enter Valid Name" pattern="[a-zA-Z\s]+" placeholder="Random Name" required  autofocus />
                 </div>
-                <img id="avatar" src="https://joeschmoe.io/api/v1/random" alt="Welcome" >
-                <div class="additional-info">
+                <div class="input-group">
+                    <label for="gender" >Gender ( Optional ) </label>
+                    <select name="gender" id="gender" title="Select Your Gender.">
+                        <option value="random">Random</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
                 </div>
-                <input type="button" class="animated pulse" value="Check Yours" id="btn">
+                <img id="avatar" src="https://joeschmoe.io/api/v1/random" alt="Welcome" />
+                <div class="additional-info"></div>
+                <input type="submit" class="animated pulse" value="Check Yours" id="btn" />
             </div>
         </div>
-        <p class="credits">Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a></p>
+        <a class="btn whatsapp animated rollIn">Share on Whatsapp</a>
+        <p class="credits">
+            Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a>
+        </p>
     </main>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js" defer="defer"></script>

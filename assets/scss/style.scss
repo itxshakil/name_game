@@ -7,10 +7,13 @@ $dark : darken(grey, 10%);
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-input {
+
+input,
+select {
     border-radius: 5px;
     border: none;
     margin-top: 5px;
@@ -19,42 +22,67 @@ input {
 
     &:hover {
         box-shadow: 4px 4px 7px #222;
+        outline: none;
     }
-    &:active{
+
+    &:active {
         outline: none;
     }
 }
-p.credits{
-    color:azure;
+
+p.credits {
+    color: azure;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
     color: azure;
 }
-canvas{
+
+canvas {
     display: block;
     vertical-align: bottom;
-    height:100%;
+    height: 100%;
 }
-#particles-js{
-    width:100%;
+
+#particles-js {
+    width: 100%;
     height: 100%;
     background-image: url('');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
 }
+
+.btn {
+    display: inline-block;
+    width:fit-content;
+    margin:0 auto;
+    padding: 0.4rem 1.3rem;
+    background: darken($primary-color, 10%);
+    color: #fff;
+    border-radius:3px;
+    border: none;
+    outline: none;
+}
+.whatsapp{
+
+    background: #25d366;
+}
 body {
     background: $primary-color;
 
     main {
         position: absolute;
-        height:100%;
-        width:100%;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        align-content: space-around;
+        .how-to{
+            margin: 0;
+            margin-left: auto;
+        }
         .container {
             display: flex;
             justify-content: center;
@@ -80,14 +108,14 @@ body {
 
                 h3 {
                     text-align: center;
-                    font-weight:400;
-                    color:lighten(white, 10%);
+                    font-weight: 400;
+                    color: lighten(white, 10%);
                 }
 
                 .input-group {
                     display: flex;
                     flex-direction: column;
-                    color:lighten(white, 30%);
+                    color: lighten(white, 30%);
                 }
 
                 img {
@@ -95,8 +123,10 @@ body {
                     width: 200px;
                     margin: auto;
                 }
-                input[type=button]{
-                    background: complement($color: lighten(teal , 40%));
+
+                input[type=button] {
+                    background: complement($color: lighten(teal, 40%));
+                    color: whitesmoke;
                 }
             }
         }
