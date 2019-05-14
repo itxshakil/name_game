@@ -3,7 +3,7 @@ const name = document.getElementById('name');
 const gender = document.getElementById('gender');
 const avatar = document.getElementById('avatar');
 btn.addEventListener('click', (e) => {
-    e.preventDefaul();
+    e.preventDefault();
     if (name.value.trim() === '') {
         name.focus(); 
     }
