@@ -11,8 +11,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="teal" />
     <meta name="apple-mobile-web-app-title" content="Name Game" />
     <meta name="msapplication-TitleColor" content="teal" />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 
 <body id="particles-js">
@@ -24,6 +24,7 @@
                 <div class="input-group">
                     <label for="name">Your Name</label>
                     <input type="text" name="name" id="name" title="Please Enter Valid Name" pattern="[a-zA-Z\s]+" placeholder="Random Name" required  autofocus />
+                    <small class="hint">Please enter Valid Name.</small>
                 </div>
                 <div class="input-group">
                     <label for="gender" >Gender ( Optional ) </label>
@@ -34,11 +35,10 @@
                     </select>
                 </div>
                 <img id="avatar" src="https://joeschmoe.io/api/v1/random" alt="Welcome" />
-                <div class="additional-info"></div>
-                <input type="submit" class="animated pulse" value="Check Yours" id="btn" />
+                <input type="button" class="animated pulse" value="Check Yours" id="btn" />
             </div>
         </div>
-        <a class="btn whatsapp animated rollIn">Share on Whatsapp</a>
+        <a href="https://api.whatsapp.com/send?text=Hey Dear Check this awesome site .What your name say about your Personality. https://name-game.netlify.com" class="btn whatsapp animated rollIn">Share on Whatsapp</a>
         <p class="credits">
             Another from <a href="mailto:itxshakiil@gmail.com">Shakil Alam</a>
         </p>
