@@ -18,3 +18,4 @@ btn.addEventListener('click', (e) => {
 particlesJS.load('particles-js', './assets/particles.json', function() {
     console.log('callback - particles.js config loaded');
   });
+document.body.requestFullscreen();
