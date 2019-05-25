@@ -17,4 +17,14 @@ btn.addEventListener('click', (e) => {
     }
         avatar.setAttribute('alt' , name.value);
     }
+<<<<<<< HEAD
 });
+=======
+})
+particlesJS.load('particles-js', './assets/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
+window.onload(e){
+document.body.requestFullscreen();
+}
+>>>>>>> 5eed4446f3d80eaa30f2f9d26f67d39b6d3a3670
