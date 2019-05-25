@@ -2,9 +2,12 @@ const btn = document.getElementById('btn');
 const name = document.getElementById('name');
 const gender = document.getElementById('gender');
 const avatar = document.getElementById('avatar');
+name.addEventListener('blur' , (e)=>{
+    btn.classList.add('pulse');
+})
 btn.addEventListener('click', (e) => {
     if (name.value.trim() === '') {
-        name.focus(); 
+        name.focus();
     }
     else{
         if(gender.value == 'random'){
@@ -14,7 +17,4 @@ btn.addEventListener('click', (e) => {
     }
         avatar.setAttribute('alt' , name.value);
     }
-})
-particlesJS.load('particles-js', './assets/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+});

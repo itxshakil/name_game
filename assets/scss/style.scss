@@ -16,7 +16,7 @@ p.credits {
     color: azure;
     text-align: center;
     writing-mode: vertical-rl;
-    transform:rotate(180deg);
+    transform: rotate(180deg);
     text-align: right;
     text-orientation: sideways;
 }
@@ -57,7 +57,7 @@ canvas {
 
 .whatsapp {
     background: #25d366;
-    animation-delay: 2s;
+    animation-delay: 3s;
     color: #fff;
 }
 
@@ -108,7 +108,7 @@ body {
 
         .container {
             display: flex;
-            margin:1rem;
+            margin: 1rem;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -122,14 +122,13 @@ body {
                 width: 320px;
                 min-height: 360px;
                 background: darken($primary-color, 10%);
-
                 box-shadow: 3px 3px 5px #333;
 
                 &:hover {
                     box-shadow: 4px 4px 7px #222;
                 }
 
-                h3 {
+                h1 {
                     text-align: center;
                     font-weight: 400;
                     color: lighten(white, 10%);
