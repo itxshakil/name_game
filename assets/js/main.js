@@ -16,6 +16,5 @@ btn.addEventListener('click', (e) => {
         avatar.setAttribute('src' , `https://joeschmoe.io/api/v1/${gender.value}/${name.value}`);
         }
         avatar.setAttribute('alt', name.value);
-        avatar.setAttribute('class', 'animated rollIn');
     }
 });
