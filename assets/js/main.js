@@ -1,23 +1,23 @@
 const btn = document.getElementById('btn');
-const name = document.getElementById('name');
+const nameInput = document.getElementById('name');
 const gender = document.getElementById('gender');
 const avatar = document.getElementById('avatar');
-name.addEventListener('blur', (e) => {
+nameInput.addEventListener('blur', (e) => {
     btn.classList.add('pulse');
 })
 btn.addEventListener('click', (e) => {
-    if (name.value.trim() === '') {
-        name.focus();
+    if (nameInput.value.trim() === '') {
+        nameInput.focus();
     }
     else {
         btn.disabled= true;
         btn.value = "Loading...";
         if (gender.value == 'random') {
-            avatar.setAttribute('src', `https://joeschmoe.io/api/v1/${name.value}`);
+            avatar.setAttribute('src', `https://joeschmoe.io/api/v1/${nameInput.value}`);
         } else {
-            avatar.setAttribute('src', `https://joeschmoe.io/api/v1/${gender.value}/${name.value}`);
+            avatar.setAttribute('src', `https://joeschmoe.io/api/v1/${gender.value}/${nameInput.value}`);
         }
-        avatar.setAttribute('alt', name.value);
+        avatar.setAttribute('alt', nameInput.value);
 
         btn.disabled = false;
         btn.value = "Check Again";
