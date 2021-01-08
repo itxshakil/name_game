@@ -27,8 +27,8 @@ document.querySelector('.whatsapp').addEventListener('click', (e) => {
     e.preventDefault();
     if (navigator.share) {
         navigator.share({
-            title: 'name-game.netlify.com/',
-            text: 'Hey Dear Check this awesome site .What your name say about your Personality.',
+            title: 'Name Game',
+            text: 'Hey Dear Check this awesome site and see what your name say about your Personality? Check now...',
             url: 'https://name-game.netlify.com/',
         })
             .then(() => console.log('Successful share'))
