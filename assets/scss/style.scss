@@ -149,6 +149,9 @@ body {
                 input[type=button] {
                     background: complement($color: lighten(teal, 40%)) !important;
                     color: whitesmoke;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-size:0.8rem;
                 }
             }
         }
