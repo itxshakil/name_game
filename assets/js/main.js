@@ -19,7 +19,7 @@ btn.addEventListener('click', (e) => {
         }
         avatar.setAttribute('alt', name.value);
 
-        btn.disabled = true;
+        btn.disabled = false;
         btn.value = "Check Again";
     }
 });
