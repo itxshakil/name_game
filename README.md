@@ -2,7 +2,7 @@
 # Name Game App
 ## A Basic Game uses Javascript and an API to show a exclusive avatar for Your Name.
 
->Demo : [https://name-game.netlify.com](https://name-game.netlify.com "Name Game App")
+>Demo : [https://shakiltech.com/name-game/](https://shakiltech.com/name-game/ "Name Game App")
 
 ## Build With
 
@@ -11,4 +11,4 @@
 
 ## Author
 
-- **[Shakil Alam](https://github.com/itxshakiil)**
+- **[Shakil Alam](https://github.com/itxshakil)**
