@@ -29,7 +29,7 @@ document.querySelector('.whatsapp').addEventListener('click', (e) => {
         navigator.share({
             title: 'Name Game',
             text: 'Hey Dear Check this awesome site and see what your name say about your Personality? Check now...',
-            url: 'https://name-game.netlify.com/',
+            url: 'https://shakiltech.com/name-game/',
         })
             .then(() => console.log('Successful share'))
             .catch((error) => console.log('Error sharing', error));
